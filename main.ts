@@ -24,7 +24,7 @@ namespace myTiles {
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 player1.y += 35
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.collecteble, function (sprite, otherSprite) {
+sprites.onOverlap(SpriteKind.Enemy, SpriteKind.collecteble, function (sprite, otherSprite) {
     positioning(169, collect)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
